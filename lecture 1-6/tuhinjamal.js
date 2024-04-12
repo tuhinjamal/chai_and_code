@@ -1,0 +1,38 @@
+const tuhinjamal = {
+  login: "tuhinjamal",
+  id: 55732076,
+  node_id: "MDQ6VXNlcjU1NzMyMDc2",
+  avatar_url: "https://avatars.githubusercontent.com/u/55732076?v=4",
+  gravatar_id: "",
+  url: "https://api.github.com/users/tuhinjamal",
+  html_url: "https://github.com/tuhinjamal",
+  followers_url: "https://api.github.com/users/tuhinjamal/followers",
+  following_url:
+    "https://api.github.com/users/tuhinjamal/following{/other_user}",
+  gists_url: "https://api.github.com/users/tuhinjamal/gists{/gist_id}",
+  starred_url: "https://api.github.com/users/tuhinjamal/starred{/owner}{/repo}",
+  subscriptions_url: "https://api.github.com/users/tuhinjamal/subscriptions",
+  organizations_url: "https://api.github.com/users/tuhinjamal/orgs",
+  repos_url: "https://api.github.com/users/tuhinjamal/repos",
+  events_url: "https://api.github.com/users/tuhinjamal/events{/privacy}",
+  received_events_url:
+    "https://api.github.com/users/tuhinjamal/received_events",
+  type: "User",
+  site_admin: false,
+  name: null,
+  company: null,
+  blog: "",
+  location: null,
+  email: null,
+  hireable: null,
+  bio: null,
+  twitter_username: null,
+  public_repos: 57,
+  public_gists: 0,
+  followers: 1,
+  following: 25,
+  created_at: "2019-09-24T06:14:43Z",
+  updated_at: "2024-02-10T13:35:55Z",
+};
+
+export default tuhinjamal;

@@ -1,0 +1,22 @@
+{
+  "name": "professional",
+  "version": "1.0.0",
+  "description": "this is how to setup a professional backend project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "professional",
+    "backend",
+    "tuhinjamal"
+  ],
+  "author": "tuhinjamal",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}

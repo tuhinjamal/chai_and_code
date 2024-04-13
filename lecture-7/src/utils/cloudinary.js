@@ -10,6 +10,24 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+const deleteOnCloudinary = async (public_id) => {
+  console.log("public ", public_id);
+  try {
+    // await cloudinary.api
+    //   .delete_resources([public_id], {
+    //     type: "upload",
+    //     resource_type: "image",
+    //   })
+    //   .then(console.log);
+    await cloudinary.api
+      .delete_resources([public_id])
+      .then((result) => console.log(result));
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
 const uploadOnCloudinary = async (localFilePath) => {
   try {
     if (!localFilePath) return null;
@@ -28,4 +46,20 @@ const uploadOnCloudinary = async (localFilePath) => {
   }
 };
 
-export { uploadOnCloudinary };
+const extractPublicIdFromUrl = async (imageUrl) => {
+  const cloudinaryUrlRegex = /([^\/]+\.jpg)\/?$/;
+
+  const match = imageUrl.match(cloudinaryUrlRegex);
+  console.log("match", match);
+  let parts = match[0].split(".");
+  let x = parts[0];
+
+  if (match && match.length > 1) {
+    // return match[1]; // The public ID is captured in the first capturing group
+    return x;
+  } else {
+    return null; // No public ID found
+  }
+};
+
+export { uploadOnCloudinary, extractPublicIdFromUrl, deleteOnCloudinary };
